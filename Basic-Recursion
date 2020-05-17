@@ -1,0 +1,16 @@
+def sum(number)
+  # Your code here
+  counter = 0
+  arr = []
+  number.times do
+    counter+=1
+    arr << counter
+  end
+  
+  total = arr.inject(:+)
+  
+  return total
+end
+
+puts sum(4)
+puts sum(10)
